@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Curency</th>
+                <th>To Curency</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="form"> </td>
+                <td>
+                    <select>
+                        <option value="VietNam">VietNam</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button id="submit" type="button" onclick="getInputValue();">Convert</button>
+
+    </form>
+    <script>
+        function getInputValue() {
+            //lay gí tri nhap vao
+            var inputval = document.getElementById("form").value;
+
+            //xu ly
+            let giatri = inputval / 23000;
+            
+            //xuat
+            document.write(inputval + ' VND =' + giatri + ' USD!');
+
+        }
+    </script>
+
+</body>
+
+</html>
