@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <h1>Caculator</h1>
+        <input type = "text" id ="so_thu_1" >
+        <input type = "text" id ="so_thu_2">
+        <input type = "button" value= "Addition(+)"  onclick="cong()"  >
+        <input type = "button" value="Subtraction(-)" onclick="tru()">
+        <input type = "button" value="Multiplication(X)" onclick="nhan()" >
+        <input type = "button" value="Division(/)" onclick="chia()" >
+        <h1  id= "kq">
+            Kêt quả :
+        </h1>
+   
+
+    <script>
+        function cong() {
+            //toan bo tai lieu, tim phan tu co thuoc tinh id la "so_thu_1"
+            var sothu1= document.getElementById("so_thu_1").value;
+            var sothu2= document.getElementById("so_thu_2").value;
+            sothu1 = parseInt(sothu1);
+            sothu2 = parseInt(sothu2);
+            var result= "";
+            result= sothu1 + sothu2;
+             document.getElementById("kq").innerHTML = result;
+        
+
+        }
+        function tru() {
+            var sothu1= document.getElementById("so_thu_1").value;
+            var sothu2= document.getElementById("so_thu_2").value;
+            sothu1 = parseInt(sothu1);
+            sothu2 = parseInt(sothu2);
+            var result= "";
+            result= sothu1 - sothu2;
+             document.getElementById("kq").innerHTML = result;
+         
+        }
+        function tru() {
+            var sothu1= document.getElementById("so_thu_1").value;
+            var sothu2= document.getElementById("so_thu_2").value;
+            sothu1 = parseInt(sothu1);
+            sothu2 = parseInt(sothu2);
+            var result= "";
+            result= sothu1 - sothu2;
+             document.getElementById("kq").innerHTML = result;
+         
+        }
+        function nhan() {
+            var sothu1= document.getElementById("so_thu_1").value;
+            var sothu2= document.getElementById("so_thu_2").value;
+            sothu1 = parseInt(sothu1);
+            sothu2 = parseInt(sothu2);
+            var result= "";
+            result= sothu1 * sothu2;
+             document.getElementById("kq").innerHTML = result;
+         
+        }
+        function chia() {
+            var sothu1= document.getElementById("so_thu_1").value;
+            var sothu2= document.getElementById("so_thu_2").value;
+            sothu1 = parseInt(sothu1);
+            sothu2 = parseInt(sothu2);
+            var result= "";
+            result= sothu1 / sothu2;
+             document.getElementById("kq").innerHTML = result;
+         
+        }
+    </script>
+    
+</body>
+</html>
